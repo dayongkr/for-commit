@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      typescript:
-        specifier: ^5.5.4
-        version: 5.5.4
     devDependencies:
       '@rollup/plugin-terser':
         specifier: ^0.4.4
@@ -27,6 +23,9 @@ importers:
       tslib:
         specifier: ^2.7.0
         version: 2.7.0
+      typescript:
+        specifier: ^5.5.4
+        version: 5.5.4
 
 packages:
 
