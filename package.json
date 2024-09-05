@@ -6,12 +6,13 @@
   "license": "ISC",
   "author": "dayongkr",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "bin/index.cjs",
   "bin": {
-    "for-commit": "dist/index.js"
+    "for-commit": "bin/index.cjs"
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",

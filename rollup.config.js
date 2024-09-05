@@ -4,8 +4,9 @@ import terser from "@rollup/plugin-terser";
 export default {
   input: "src/index.ts",
   output: {
-    file: "dist/index.js",
+    file: "bin/index.cjs",
     format: "cjs",
   },
   plugins: [typescript(), terser()],
+  external: ["node:child_process"],
 };
