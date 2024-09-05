@@ -1,10 +1,27 @@
 {
   "name": "for-commit",
   "version": "0.1.0",
-  "main": "index.js",
-  "scripts": {},
+  "description": "A CLI that copies a prompt containing changes for generating commit messages to the clipboard.",
   "keywords": [],
-  "author": "",
   "license": "ISC",
-  "description": ""
+  "author": "dayongkr",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "for-commit": "dist/index.js"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^22.5.4",
+    "rollup": "^4.21.2",
+    "tslib": "^2.7.0"
+  },
+  "packageManager": "pnpm@9.9.0",
+  "dependencies": {
+    "typescript": "^5.5.4"
+  }
 }
