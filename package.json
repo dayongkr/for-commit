@@ -1,6 +1,6 @@
 {
   "name": "for-commit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A CLI that copies a prompt containing changes for generating commit messages to the clipboard.",
   "keywords": [],
   "license": "ISC",
@@ -14,6 +14,9 @@
     "build": "rollup -c",
     "dev": "rollup -c -w"
   },
+  "files": [
+    "bin"
+  ],
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
