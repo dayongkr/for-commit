@@ -1,22 +1,32 @@
 {
   "name": "for-commit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A CLI that copies a prompt containing changes for generating commit messages to the clipboard.",
-  "keywords": [],
-  "license": "ISC",
+  "keywords": [
+    "cli",
+    "commit",
+    "git",
+    "copy",
+    "clipboard"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dayongkr/for-commit.git"
+  },
+  "license": "MIT",
   "author": "dayongkr",
   "type": "module",
   "main": "bin/index.cjs",
   "bin": {
     "for-commit": "bin/index.cjs"
   },
+  "files": [
+    "bin"
+  ],
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w"
   },
-  "files": [
-    "bin"
-  ],
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
@@ -25,5 +35,8 @@
     "tslib": "^2.7.0",
     "typescript": "^5.5.4"
   },
-  "packageManager": "pnpm@9.9.0"
+  "packageManager": "pnpm@9.9.0",
+  "engines": {
+    "node": ">=18"
+  }
 }
